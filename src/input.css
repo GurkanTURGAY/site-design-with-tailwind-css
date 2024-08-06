@@ -9,4 +9,13 @@
     .nav-link-active{
         @apply bg-gray-400 text-white
     }
+    .modal {
+        @apply fixed inset-0 bg-gray-800 bg-opacity-60 flex items-center justify-center opacity-0 invisible transition-opacity
+    }
+    .modal.active {
+        @apply visible opacity-100
+    }
+    .modal-content {
+        @apply bg-white p-10 max-w-full min-w-[600px] rounded dark:bg-gray-900
+    }
 }
