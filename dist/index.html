@@ -43,8 +43,8 @@
             </nav>
 
             <div class="mt-auto pt-3">
-                <button
-                    onclick="darkMode()" class="bg-black w-full hover:bg-gray-600 transition-colors border text-white h-10 rounded justify-center flex items-center px-4 text-sm">
+                <button onclick="darkMode()"
+                    class="bg-black w-full hover:bg-gray-600 transition-colors border text-white h-10 rounded justify-center flex items-center px-4 text-sm">
 
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                         class="fill-current text-white mr-2">
@@ -80,7 +80,8 @@
 
                 <div class="grid mt-2 grid-cols-10 gap-7">
                     <div class="col-span-2">
-                        <a href="#" class="group border hover:!border-red-600 dark:border-gray-800 flex flex-col px-4 py-7 rounded items-center">
+                        <a href="#"
+                            class="group border hover:!border-red-600 dark:border-gray-800 flex flex-col px-4 py-7 rounded items-center">
                             <span
                                 class="w-24 h-24 border mb-4 border-red-500 hover:bg-red-800 transition-colors rounded-full grid place-items-center relative">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
@@ -96,7 +97,8 @@
                     </div>
 
                     <div class="col-span-2">
-                        <a href="#" class="group border hover:!border-green-600 dark:border-gray-800 flex flex-col px-4 py-7 rounded items-center">
+                        <a href="#"
+                            class="group border hover:!border-green-600 dark:border-gray-800 flex flex-col px-4 py-7 rounded items-center">
                             <span
                                 class="w-24 h-24 border mb-4 border-green-500 hover:bg-green-800 transition-colors rounded-full grid place-items-center relative">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
@@ -129,7 +131,8 @@
                     </div>
 
                     <div class="col-span-2">
-                        <a href="#" class="border group dark:border-gray-800 hover:!border-indigo-600 flex flex-col px-4 py-7 rounded items-center">
+                        <a href="#"
+                            class="border group dark:border-gray-800 hover:!border-indigo-600 flex flex-col px-4 py-7 rounded items-center">
                             <span
                                 class="w-24 h-24 border mb-4 hover:bg-indigo-800 transition-colors border-indigo-500 rounded-full grid place-items-center relative">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
@@ -145,7 +148,8 @@
                     </div>
 
                     <div class="col-span-2">
-                        <a href="#" class="border group hover:!border-pink-600 dark:border-gray-800 flex flex-col px-4 py-7 rounded items-center">
+                        <a href="#"
+                            class="border group hover:!border-pink-600 dark:border-gray-800 flex flex-col px-4 py-7 rounded items-center">
                             <span
                                 class="w-24 h-24 border mb-4 hover:bg-pink-800 transition-colors border-pink-500 rounded-full grid place-items-center relative">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
@@ -165,8 +169,17 @@
     </main>
 
     <script>
-        function darkMode(){
+        if (localStorage.getItem('dark')) {
+            document.documentElement.classList.add('dark');
+        }
+        function darkMode() {
             document.documentElement.classList.toggle('dark');
+            if (document.documentElement.classList.contains('dark')) {
+                localStorage.setItem('dark', true);
+            }
+            else {
+                localStorage.removeItem('dark');
+            }
         }
     </script>
 
