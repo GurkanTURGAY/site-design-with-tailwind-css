@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-white h-full flex flex-col dark:bg-gray-900 dark:text-white">
+
+    <div
+        class="h-15 border-b flex-shrink-0 border-gray-100 dark:border-red-700 w-full flex justify-between items-center px-5">
+        <a href="#" class="text-2xl font-medium inline-flex items-center text-indigo-700 dark:text-white">
+            ./TailwindCss
+            <span class="text-sm text-gray-500 ml-2">v3.4.7</span>
+        </a>
+        <form action="" class="w-1/3">
+            <input type="text" placeholder="Ara"
+                class="w-full bg-sky-100 h-10 px-3 placeholder-gray-400 rounded dark:bg-gray-600">
+        </form>
+        <a href="#" class="bg-green-600 h-10 inline-flex items-center   px-6 rounded text-white">Giriş Yap</a>
+    </div>
+
+    <main class="flex-auto flex">
+        <aside class="w-64 border-r flex flex-col p-2 border-red-700 divide-solid divide-red-700 divide-y">
+
+            <nav class="mb-3 space-y-1">
+                <a href="#" class="nav-link">Anasayfa</a>
+                <a href="#" class="nav-link nav-link-active">Programlama Dilleri</a>
+                <a href="#" class="nav-link">Keşfet</a>
+                <a href="#" class="nav-link">Ayarlar</a>
+                <a href="#" class="nav-link">Soru & Cevap</a>
+            </nav>
+
+            <nav class="mt-3 pt-3 space-y-1">
+                <a href="#" class="nav-link">HTML</a>
+                <a href="#" class="nav-link">CSS</a>
+                <a href="#" class="nav-link">JavaScript</a>
+                <a href="#" class="nav-link">Python</a>
+                <a href="#" class="nav-link">C#</a>
+            </nav>
+
+            <div class="mt-auto pt-3">
+                <button
+                    onclick="darkMode()" class="bg-black w-full hover:bg-gray-600 transition-colors border text-white h-10 rounded justify-center flex items-center px-4 text-sm">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        class="fill-current text-white mr-2">
+                        <path
+                            d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z" />
+                    </svg>
+                    <span class="hidden dark:inline">Açık Mod</span>
+                    <span class="inline dark:hidden">Koyu Mod</span>
+                </button>
+            </div>
+
+        </aside>
+        <section class="flex-auto py-6 px-10">
+            <div class="mx-auto max-w-screen-xl">
+                <h2 class="text-3xl mb-4">TailwindCss</h2>
+                <p class="italic text-pretty border bg-gray-400 text-rose-900">
+                    &nbsp;&nbsp;Programlama Dilleri Sayfası
+                </p>
+
+                <div class="bg-lime-700 mt-5 rounded-sm justify-center items-center border text-white flex-row flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                        class="fill-current text-white mr-2">
+                        <path
+                            d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z" />
+                    </svg>
+                    <h6><strong class="italic items-center flex-row flex">Programlama Dilleri</strong></h6>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                        class="fill-current text-white ml-2">
+                        <path
+                            d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z" />
+                    </svg>
+                </div>
+
+                <div class="grid mt-2 grid-cols-10 gap-7">
+                    <div class="col-span-2">
+                        <a href="#" class="group border hover:!border-red-600 dark:border-gray-800 flex flex-col px-4 py-7 rounded items-center">
+                            <span
+                                class="w-24 h-24 border mb-4 border-red-500 hover:bg-red-800 transition-colors rounded-full grid place-items-center relative">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                                    width="40px" class="fill-current text-red-700""><path d=" M400-304 240-464l56-56 104
+                                    104 264-264 56 56-320 320Z" />
+                                </svg>
+                            </span>
+                            <span
+                                class="inline-flex h-10 items-center rounded px-5 text-white bg-red-500 hover:bg-red-800 transition-colors group-hover:bg-red-600">
+                                HTML
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="col-span-2">
+                        <a href="#" class="group border hover:!border-green-600 dark:border-gray-800 flex flex-col px-4 py-7 rounded items-center">
+                            <span
+                                class="w-24 h-24 border mb-4 border-green-500 hover:bg-green-800 transition-colors rounded-full grid place-items-center relative">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                                    width="40px" class="fill-current text-green-700""><path d=" M400-304 240-464l56-56
+                                    104 104 264-264 56 56-320 320Z" />
+                                </svg>
+                            </span>
+                            <span
+                                class="inline-flex h-10 items-center rounded px-5 hover:bg-green-800 transition-colors text-white bg-green-500 group-hover:bg-green-600">
+                                CSS
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="col-span-2">
+                        <a href="#"
+                            class="border group dark:border-gray-800 hover:!border-blue-600 flex flex-col px-4 py-7 rounded items-center">
+                            <span
+                                class="w-24 h-24 border mb-4 border-blue-500 hover:bg-blue-800 transition-colors rounded-full grid place-items-center relative">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                                    width="40px" class="fill-current text-blue-700""><path d=" M400-304 240-464l56-56
+                                    104 104 264-264 56 56-320 320Z" />
+                                </svg>
+                            </span>
+                            <span
+                                class="inline-flex h-10 hover:bg-blue-800 transition-colors items-center rounded px-5 text-white bg-blue-500 group-hover:bg-blue-600">
+                                JAVASCRIPT
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="col-span-2">
+                        <a href="#" class="border group dark:border-gray-800 hover:!border-indigo-600 flex flex-col px-4 py-7 rounded items-center">
+                            <span
+                                class="w-24 h-24 border mb-4 hover:bg-indigo-800 transition-colors border-indigo-500 rounded-full grid place-items-center relative">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                                    width="40px" class="fill-current text-indigo-700""><path d=" M400-304 240-464l56-56
+                                    104 104 264-264 56 56-320 320Z" />
+                                </svg>
+                            </span>
+                            <span
+                                class="inline-flex h-10 hover:bg-indigo-800 transition-colors items-center rounded px-5 text-white bg-indigo-500 group-hover:bg-indigo-600">
+                                PYTHON
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="col-span-2">
+                        <a href="#" class="border group hover:!border-pink-600 dark:border-gray-800 flex flex-col px-4 py-7 rounded items-center">
+                            <span
+                                class="w-24 h-24 border mb-4 hover:bg-pink-800 transition-colors border-pink-500 rounded-full grid place-items-center relative">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                                    width="40px" class="fill-current text-pink-700""><path d=" M400-304 240-464l56-56
+                                    104 104 264-264 56 56-320 320Z" />
+                                </svg>
+                            </span>
+                            <span
+                                class="inline-flex h-10 items-center hover:bg-pink-800 transition-colors rounded px-5 text-white bg-pink-500 group-hover:bg-pink-600">
+                                C#
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function darkMode(){
+            document.documentElement.classList.toggle('dark');
+        }
+    </script>
+
+</body>
+
+</html>
