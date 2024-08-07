@@ -20,7 +20,21 @@
             <input type="text" placeholder="Ara"
                 class="w-full bg-sky-100 h-10 px-3 placeholder-gray-400 rounded dark:bg-gray-600">
         </form>
-        <a href="javascript:;" onclick="modal('login-modal')" class="bg-green-600 h-10 inline-flex items-center   px-6 rounded text-white">Giriş Yap</a>
+        <a href="javascript:;" onclick="modal('login-modal')" class="bg-green-600 hidden h-10 inline-flex items-center px-6 rounded text-white">Giriş Yap</a>
+
+        <div class="group relative">
+            <button class="flex items-center bg-gray-100 rounded h-10 px-4 text-sm">
+                <img src="https://w7.pngwing.com/pngs/980/304/png-transparent-computer-icons-user-profile-avatar-heroes-silhouette-avatar.png" alt="" width="20" height="20" class="rounded-full mr-2">
+                <span class="dark:text-black">Gürkan TURGAY</span>
+            </button>
+            <div tabindex="0" class="opacity-0 invisible absolute top-full right-0 w-44 rounded p-2 space-y-1 bg-gray-200 group-focus-within:mt-1 group-focus-within:opacity-100 group-focus-within:visible transition-all">
+                <a href="#" class="text-sm flex h-7 items-center px-2 rounded hover:bg-gray-100 transition-colors">Profil</a>
+                <a href="#" class="text-sm flex h-7 items-center px-2 rounded hover:bg-gray-100 transition-colors">Eğitimler</a>
+                <a href="#" class="text-sm flex h-7 items-center px-2 rounded hover:bg-gray-100 transition-colors">Ayarlar</a>
+                <a href="#" class="text-sm flex h-7 items-center px-2 rounded hover:bg-red-100 transition-colors text-red-500">Çıkış Yap</a>
+            </div>
+        </div>
+
     </div>
 
     <main class="flex-auto flex">
